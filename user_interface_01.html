@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USER INTERFACE 01</title>
+    
+    <script async type="application/dart" src="user_interface_01.dart"></script>
+    <script async src="packages/browser/dart.js"></script>
+    
+    <link rel="stylesheet" href="user_interface_01.css">
+  </head>
+  <body>
+    
+    <!--Displays the game's name at the top of the page-->
+    <div id="title" class="block">
+      <p id="header" class="noselect">The Inide Lounge</p>
+    </div>
+    
+    <!--These divs create the fading underline for the game's title-->
+    <div id="underleft" class="underhead"></div><div id="underright" class="underhead"></div>
+    
+    <!--The first block. It contains the first button choice made by the player-->
+    <div id="block1" class="block">
+      <div id="block1interior" class="interior">
+        <button id="splayerbutton" class="button noselect">Singleplayer</button>
+        <div id="directiveouter" class="block">
+          <p id="directive" class="noselect">Where to, Boss?</p>
+        </div>
+        <button id="mplayerbutton" class="button noselect">Multiplayer</button>
+      </div>
+      
+      <div id="splayerinterior" class="interior">
+        <p id="sptext" class="noselect text vert">Singleplayer</p>
+      </div>
+      
+      <div id="mplayerinterior" class="interior">
+        <p id="mptext" class="noselect text vert">Multiplayer</p>
+      </div>
+    </div>
+    
+    <!--The settings block. It is located on the bottom margin of the first block-->
+    <div id="settingsdiv" class="block">
+      <button id="settings" class="button noselect"></button>
+      <p id="settingsp" class="noselect" >Settings</p>
+    </div>
+
+  </body>
+</html>
